@@ -1,0 +1,108 @@
+.slider-text-contain{
+    padding: 150px 0 0px 0px;
+    color: white;
+    text-transform: uppercase;
+}
+body{
+    overflow-x: hidden;
+}
+.circle{
+    transform: translate(13%, 36%);
+    height: 255px;
+    text-align: center;
+    border: 1px solid #fff;
+    padding-top: 50px;
+    border-radius: 50%;
+    padding-left: 0px;
+    width: 110%;
+}
+.slider-text-contain{
+    padding-left: 75px;
+}
+.circle-content{
+    height: 100%;
+    transform: translateY(30%);
+}
+.circle-content span{
+    font-size: 134px;
+    font-weight: 100;
+    line-height: 0;
+    color: white;
+}
+.circle-content img{
+    transform: translateY(-100%);
+    width: 55px;
+
+}
+.btn-more button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+    text-transform: capitalize;
+    /* padding: 0 20px; */
+    border-radius: 37px;
+    font-size: 15px;
+    height: 55px;
+    line-height: 1;
+    width: 55px;
+    margin: 20px 0px 40px 0px;
+}
+.greenDiv{
+    background-color: #193f3d;
+    padding: 20px 20px 40px 20px;
+}
+.greenDiv h3{
+    display: inline;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 1.6;
+}
+.greenDiv .btn-more{
+    height: 100%;
+    margin-top: auto;
+
+}
+.greenDiv .btn-more button{
+    margin: 0;
+    
+}
+.invest-contain span{
+    display: block;
+    font-weight: 100;
+    background-color: #ffffff12;
+    padding: 5px 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+.greenDiv .recent{
+    display: block;
+    font-weight: 100;
+    background-color: #ffffff12;
+    padding: 5px 10px;
+    width: fit-content;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+.yellowDiv{
+    padding: 20px 20px 40px 20px;
+    background-image: url("../img/Repeat.png");
+    background-color: #b27208;
+    padding-bottom: 55.5px;;
+}
+.btn-row button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 21px;
+    padding-bottom: 5px;
+}
+.btn-row{
+    padding-right: 40px;
+}
+.pr-0{
+    padding-right: 0 !important;
+}
+.pl-0{
+    padding-left: 0 !important;
+}
