@@ -1,14 +1,17 @@
 import Slider from "../components/Banner/Banner";
 import Map from "../components/Map/Map";
 import Header from "../components/Header/Header"
+import LatestNews from "../components/LatestNews/LatestNews";
 
 const Home = ()=>{
-    return(
+    return(<>
         <div className="bg">
-            <Header  />
+           <Header/>
             <Slider />
+            </div>
             <Map />
-        </div>
+            <LatestNews />
+        </>
     )
 }
 export default Home;

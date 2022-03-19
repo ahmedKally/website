@@ -2,6 +2,7 @@ import logo from '../img/logo.png';
 import darkMode from '../img/contrast.svg';
 import search from '../img/search.svg'
 import './Header.scss'
+import menu from "../img/menu-right.svg"
 const Header= () =>{
     return(
         <div className="container-fluid border-bottom">
@@ -27,7 +28,7 @@ const Header= () =>{
         <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
 
         <label for="navi-toggle" className="navigation__button">
-            <div className="navigation__icon">&nbsp;</div>
+            <div className="navigation__icon"></div>
         </label>
         <div className="navigation__background">&nbsp;</div>
         <nav className="navigation__nav">

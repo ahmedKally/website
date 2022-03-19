@@ -1,0 +1,52 @@
+.footer{
+    background-image: url('../img/Repeat.png');
+    // background-color: #193f3d;
+    
+    color: white;
+    font-weight: 100;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-contain{
+    padding: 20px;
+}
+.bg-green{    
+    background: linear-gradient(90deg, #193f3d 65%, rgba(101, 125, 126, 0.8) 100%);
+
+}
+.social-media div{
+    display: inline;
+    padding-left: 30px;
+}
+.subscribe input{
+    
+    display: block;
+    background-color: #ffffff12;
+    border: none;
+    color: white !important;
+    padding: 5px;
+    padding-left: 15px;
+    width: 75%;
+    margin-bottom: 15px;
+}
+.subscribe button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+    padding: 0px 30px;
+    padding-bottom: 4px;
+    margin-bottom: 30px;
+}
+::placeholder{
+        color:#fff;
+        opacity: 1; /* Firefox */      
+}
+.social-media img{
+    padding-right: 15px;
+}
+
+.copyright{
+    margin-top: 30px;
+}

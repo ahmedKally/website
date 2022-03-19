@@ -98,7 +98,7 @@ $color-black: #000;
 }
 .bg{
     background-image: url('../img/banar.png');
-    background-size: contain;
+    background-size: cover;
 }
 
 
@@ -210,11 +210,13 @@ $color-black: #000;
     // use the '~' for an sibling (not direct)
     &__checkbox:checked ~ &__background {
         transform: scale(80);
+        
     }
 
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+        background-color: #193f3d;
     }
 
     //ICON
@@ -226,9 +228,9 @@ $color-black: #000;
         &,
         &::before,
         &::after {
-            width: 3rem;
+            width: 2rem;
             height: 2px;
-            background-color: $color-grey-dark-3;
+            background-color: #fff;
             display: inline-block;
         }
 
@@ -237,7 +239,7 @@ $color-black: #000;
         &::after {
             content: "";
             position: absolute;
-            left: 0;
+            left: -8px;
             transition: all .2s;
         }
 
@@ -259,9 +261,7 @@ $color-black: #000;
         top: 1rem;
     }
 
-    //when checkbox is selected we select the sibling then we select its child.
     &__checkbox:checked + &__button &__icon {
-        //for the 'x' we need to keep the size so we set it to transparent
         background-color: transparent;
     }
 

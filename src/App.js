@@ -5,17 +5,19 @@ import React from "react";
 import Header from "./components/Header/Header";
 import Home from './pages/Home';
 import NewsListing from './pages/NewsListing';
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <Router>
       <div>
-        <Header/>
+        
 
         <Routes>
           <Route path='/news-listing' element={<NewsListing/>}></Route>
           <Route path='/' element={<Home/>}></Route>
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

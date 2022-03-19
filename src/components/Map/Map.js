@@ -1,6 +1,7 @@
 import Lists from '../Lists/Lists';
 import './Map.scss';
 import map from "../img/map.png";
+import rightBtn from "../img/rightBtn.png"
 const Map = ()=>{
 
     const countries =['Nigeria','Ethiopia','Egypt','Tanzania','Kenya','Uganda','Algeria', 'Sudan'];
@@ -10,7 +11,7 @@ const Map = ()=>{
         <div className="mapBg">
             <div className="container-fluid bgGreen">
                 <div className="row">
-                    <div className="col-lg-2 border-right">
+                    <div className="col-lg-2 border-right title-contain">
                         <h1>Opportunities</h1>
                     </div>
                     <div className="col-lg-10 mapContain">
@@ -24,8 +25,16 @@ const Map = ()=>{
                                             <img src={map} />
                                     </div>
                                 </div>
+
+                                <div className="col-lg-4">
+                                                                    <div className="btn-row " > 
+                                                                        <span className='text-white'>More</span> 
+                                                                         <button><img width="17" src={rightBtn} /></button>
+                                                                    </div>
+                                                                    </div>
                                 
                             </div>
+                            
                         </div>
                     </div>
                 </div>
