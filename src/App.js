@@ -4,15 +4,12 @@ import './App.scss';
 import React from "react";
 import Header from "./components/Header/Header";
 import Home from './pages/Home';
-import NewsListing from './pages/NewsListing';
-import Footer from "./components/Footer/Footer";
+import NewsListing from './pages/NewsListing/NewsListing';
 
 function App() {
   return (
     <Router>
       <div>
-        
-
         <Routes>
           <Route path='/news-listing' element={<NewsListing/>}></Route>
           <Route path='/' element={<Home/>}></Route>
