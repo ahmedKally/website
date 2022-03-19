@@ -1,6 +1,6 @@
 import Slider from "../components/Banner/Banner";
 import Map from "../components/Map/Map";
-import Header from "../components/navbar/NavBar"
+import Header from "../components/Header/Header"
 
 const Home = ()=>{
     return(

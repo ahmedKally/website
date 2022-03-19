@@ -1,8 +1,8 @@
 import logo from '../img/logo.png';
 import darkMode from '../img/contrast.svg';
 import search from '../img/search.svg'
-import './NavBar.scss'
-const Navbar= () =>{
+import './Header.scss'
+const Header= () =>{
     return(
         <div className="container-fluid border-bottom">
             <div className="row ">
@@ -48,4 +48,4 @@ const Navbar= () =>{
     )
 }
 
-export default Navbar;
+export default Header;
