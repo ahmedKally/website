@@ -55,6 +55,7 @@ const NewsListing = () => {
 	const getNewsListingData = ()=>{
 		fetch(NEWS_LISTING_API).then(response => response.json()).then((data) => {
 			setNewsListingItems(data.News);
+			setNewsListingItemsFiltered(data.News);
 			console.log(data.News);
 		}).catch(err => {
 			console.log(err);
@@ -62,14 +63,14 @@ const NewsListing = () => {
 	}
 
 	const filterNewsListingItems = () => {
-		let filteredNewsListingItems = newsListingItems;
-		if (fromDate !== '') {
-			filteredNewsListingItems = filteredNewsListingItems.filter(item => { const dateSplit = item.published.split('/'); return new Date(`20${dateSplit[2]}`.slice(-2), dateSplit[0], dateSplit[1]).toISOString().split('T')[0] >= fromDate.split('T')[0] });
+		let filteredNewsListingItems = [...newsListingItems];
+		if (fromDate !== '' && fromDate !== undefined) {
+			filteredNewsListingItems = filteredNewsListingItems.filter(item => { const dateSplit = item.published.split('/'); return new Date('20'+`20${dateSplit[2]}`.slice(-2), dateSplit[0]-1, parseInt(dateSplit[1]+1)).toISOString().split('T')[0] >= fromDate.split('T')[0] });
 		}
-		if (toDate !== '') {
-			filteredNewsListingItems = filteredNewsListingItems.filter(item => { const dateSplit = item.published.split('/'); return new Date(`20${dateSplit[2]}`.slice(-2), dateSplit[0], dateSplit[1]).toISOString().split('T')[0] <= toDate.split('T')[0] });
+		if (toDate !== '' && toDate !== undefined) {
+			filteredNewsListingItems = filteredNewsListingItems.filter(item => { const dateSplit = item.published.split('/'); return new Date('20'+`20${dateSplit[2]}`.slice(-2), dateSplit[0]-1, parseInt(dateSplit[1]+1)).toISOString().split('T')[0] <= toDate.split('T')[0] });
 		}
-		if (search !== '') {
+		if (search !== '' && search !== undefined) {
 			filteredNewsListingItems = filteredNewsListingItems.filter(item => item.title.toLowerCase().includes(search.toLowerCase()));
 		}
 		setNewsListingItemsFiltered(filteredNewsListingItems);
