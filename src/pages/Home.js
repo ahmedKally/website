@@ -1,13 +1,13 @@
-import Slider from "../compontents/Banner/Banner";
-import Map from "../compontents/Map/Map";
-import Navbar from "../compontents/navbar/NavBar"
+import Slider from "../components/Banner/Banner";
+import Map from "../components/Map/Map";
+import Header from "../components/navbar/NavBar"
 
 const Home = ()=>{
     return(
         <div className="bg">
-            <Navbar  />
-            <Slider />
-            <Map />
+            <Header/>
+            <Slider/>
+            <Map/>
         </div>
     )
 }
