@@ -18,7 +18,7 @@ const Footer =()=>{
                 <div className='col-lg-10 footer-contain'>
                     <div className='container-fluid'>
                         <div className='row'>
-                        <div className="col-lg-3  ">
+                        <div className="col-lg-3">
                     <ul className="footer-pages">
                         {footerFirstSec.map((desc)=><li>{desc}</li>)}
                     </ul>

@@ -4,8 +4,14 @@
     text-transform: uppercase;
 }
 body{
-    overflow-x: hidden;
+    
+    width: 100%;
 }
+#root{
+    width: 100%;
+    overflow: hidden;
+}
+
 .circle{
     transform: translate(13%, 36%);
     height: 255px;
@@ -15,6 +21,7 @@ body{
     border-radius: 50%;
     padding-left: 0px;
     width: 110%;
+    
 }
 .slider-text-contain{
     padding-left: 75px;
