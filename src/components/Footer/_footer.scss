@@ -1,0 +1,54 @@
+@import "/src/sass/varibles";
+
+.footer {
+	background-image: url('../img/Repeat.png');
+	// background-color: #193f3d;
+	color: $color-white;
+	font-weight: 100;
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
+}
+.footer-contain {
+	padding: 20px;
+}
+.bg-green {
+	background:$green-gradiant2 ;
+}
+.social-media {
+	div {
+		display: inline;
+		padding-left: 30px;
+	}
+	img {
+		padding-right: 15px;
+	}
+}
+.subscribe {
+	input {
+		display: block;
+		background-color:$input-bg ;
+		border: none;
+		color: $color-white !important;
+		padding: 5px;
+		padding-left: 15px;
+		width: 75%;
+		margin-bottom: 15px;
+	}
+	button {
+		background-color: transparent;
+		border: 1px solid $color-white;
+		color: $color-white;
+		padding: 0px 30px;
+		padding-bottom: 4px;
+		margin-bottom: 30px;
+	}
+}
+::placeholder {
+	color: $color-white;
+	opacity: 1;
+}
+.copyright {
+	margin-top: 30px;
+}

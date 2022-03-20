@@ -1,0 +1,26 @@
+
+ @import "/src/sass/varibles";
+.item-contain {
+	margin-right: 30px;
+	h4 {
+		text-align: left;
+		font-size: 20px;
+	}
+}
+.carousel {
+	text-align: center;
+}
+.news-icon-contain {
+	span {
+		float: left;
+		color: $co1or-orange;
+		font-weight: 100;
+	}
+	margin-top: 10px;
+	svg {
+		float: right;
+	}
+}
+.latest-contain-news {
+	min-height: 300px;
+}

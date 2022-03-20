@@ -1,0 +1,28 @@
+@import "/src/sass/varibles";
+.card-contain {
+	text-align: center;
+	border: 1px solid;
+	padding-top: 25px;
+	padding-bottom: 6px;
+	position: relative;
+	top: 15px;
+	&:hover {
+		background-color: $color-white;
+		color: $co1or-orange;
+	}
+	p {
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+	svg {
+		font-size: 33px;
+	}
+}
+.btn-row {
+	span {
+		text-transform: capitalize;
+	}
+	button {
+		margin-left: 9px;
+	}
+}

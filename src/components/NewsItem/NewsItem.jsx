@@ -1,5 +1,5 @@
 import newsPic from '../img/isto.jpg';
-import './NewsItem.css';
+import './_newsItem.scss';
 import share from '../img/share.svg';
 import favorite from '../img/favorit.svg';
 
@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Item = (props) => {
 	return (
 		<div className="item-contain container-fluid">
-			<div className="row">
+			<div className="row latest-contain-news">
 				<div className="img-contain col-lg-12">
 					<img className="w-100" src={props.urlToImage} />
 				</div>

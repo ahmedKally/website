@@ -7,7 +7,7 @@ import travel from '../img/travel.svg';
 import house from '../img/house.svg';
 import tree from '../img/Path61389.svg';
 import energy from '../img/Path61391.svg';
-import './Slider.scss';
+import './_slider.scss';
 import SmallCard from '../SmallCard/SmallCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSuitcase, faHouse, faTree, faIndustry, faBolt, faHeart, faHeartPulse } from '@fortawesome/free-solid-svg-icons';
@@ -46,6 +46,7 @@ const Slider = (props) => {
 	};
 
 	return (
+		// start banner
 		<div className="container-fluid">
 			<div className="row">
 				<div className="col-lg-2 cricle-contain border-right">
@@ -58,7 +59,7 @@ const Slider = (props) => {
 					</div>
 				</div>
 				<div className="col-lg-10  slider-text-contain">
-					<div className="container pr-0">
+					<div className="container pr-0 cards-data">
 						<div className="row">
 							<div className="col-lg-12 slide-text-contain">
 								<div>
@@ -88,7 +89,7 @@ const Slider = (props) => {
 									</div>
 								</div>
 							</div>
-							<div className="col-lg-7 pl-0">
+							<div className="col-lg-7 yellow-contain pl-0">
 								<div className="container-fluid yellowDiv">
 									<div className="row">
 										<div className="col-lg-8 invest-contain">
@@ -114,6 +115,7 @@ const Slider = (props) => {
 				</div>
 			</div>
 		</div>
+		// end banner
 	);
 };
 export default Slider;

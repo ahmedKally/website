@@ -13,9 +13,13 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path='/news-listing' element={<NewsListing/>}></Route>
+         
           <Route path='/' element={<Home/>}></Route>
+          
+           
+          <Route path='/news-listing' element={<NewsListing/>}></Route>
           <Route path='/news-listing/news-desc' element={<NewsDesc />} />
+         
         </Routes>
         
 
@@ -26,3 +30,5 @@ function App() {
 }
 
 export default App;
+
+         
