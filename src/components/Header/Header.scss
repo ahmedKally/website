@@ -11,7 +11,6 @@ $color-tertiary-dark: #5643fa;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
@@ -20,85 +19,89 @@ $color-white: #fff;
 $color-black: #000;
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content }; // 600px
-    }
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 37.5em) {
+			@content;
+		} // 600px
+	}
 
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content }; // 900px
-    }
+	@if $breakpoint == tab-port {
+		@media only screen and (max-width: 56.25em) {
+			@content;
+		} // 900px
+	}
 
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content }; //1200px
-    }
+	@if $breakpoint == tab-land {
+		@media only screen and (max-width: 75em) {
+			@content;
+		} //1200px
+	}
 
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content }; // 1800px
-    }
+	@if $breakpoint == big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			@content;
+		} // 1800px
+	}
 }
-
-
 
 .logo {
-    width: 120px;
-    float: right;
-    padding: 13px;
+	width: 120px;
+	float: right;
+	padding: 13px;
 }
-.darkMode-contain{
-    padding-left: 30px;
-    font-size: 22px;
-    position: relative;
-    top: 3px;
-    color: white;
+.darkMode-contain {
+	padding-left: 30px;
+	font-size: 22px;
+	position: relative;
+	top: 3px;
+	color: white;
 }
-.darkMode-contain span{
-    
-    padding-left: 30px;
-    padding-right: 30px;
+.darkMode-contain span {
+	padding-left: 30px;
+	padding-right: 30px;
 }
-.border-left{
-    border-left: 1px solid #fff;
+.border-left {
+	border-left: 1px solid #fff;
 }
-.border-right{
-    border-right: 1px solid #fff;
+.border-right {
+	border-right: 1px solid #fff;
 }
-.border-bottom{
-    // padding: 0;
-    border-bottom: 1px solid #fff;
+.border-bottom {
+	// padding: 0;
+	border-bottom: 1px solid #fff;
 }
-.searchContain img{
-    padding-right: 30px;
+.searchContain img {
+	padding-right: 30px;
 }
-.searchContain span{
-    padding-right: 30px;
-    color: white;
-    text-transform: uppercase;
+.searchContain span {
+	padding-right: 30px;
+	color: white;
+	text-transform: uppercase;
 }
-.searchContain button{
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 2px 20px;
-    border-radius: 20px;
-    color: white;
+.searchContain button {
+	background-color: transparent;
+	border: 1px solid #fff;
+	padding: 2px 20px;
+	border-radius: 20px;
+	color: white;
 }
 // .bg{
 //     // background-color: gray;
 // }
-.darkMode-contain{
-    float: right;
-    padding: 22px 0px;
+.darkMode-contain {
+	float: right;
+	padding: 22px 0px;
 }
-.darkMode-contain img{
-    width: 16px;
+.darkMode-contain img {
+	width: 16px;
 }
-.searchContain{
-    text-align: center;
-    padding: 22px;
-
+.searchContain {
+	text-align: center;
+	padding: 22px;
 }
-.bg{
-    background-image: url('../img/banar.png');
-    background-size: cover;
+.bg {
+	background-image: url('../img/banar.png');
+	background-size: cover;
 }
 .menue-contain img{
     padding: 25px;
